@@ -10,6 +10,14 @@ body {
 }
 
 /* Add styles here! */
+.max-width-wrapper {
+  background-color: hsl(0, 0%, 100%);
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 24px;
+  border-bottom: 8px solid hsl(0, 0%, 60%);
+}
+
 p {
   font-size: 1.25rem;
   line-height: 1.5;
@@ -21,8 +29,8 @@ header {
   padding-bottom: 64px;
 
   .title {
-    font-size: 2em;
-    margin-bottom: 4rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
     margin-top: 0;
   }
   p {
@@ -32,6 +40,11 @@ header {
       color: hsla(160, 100%, 30%, 1)
     }
   }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
   .max-width-wrapper {
     border-bottom: none;
   }
@@ -49,17 +62,11 @@ main {
     .indented-heading {
       background-color: hsla(45, 100%, 50%, 1);
       border-bottom: 8px solid hsla(45, 100%, 40%, 1);
-      width: max-content;
-      padding: 16px 24px 16px 32px;
-      margin: 0 0 2rem -2rem;
+      width: fit-content;
+      padding: 16px 32px;
+      margin: 0 0 0 -2rem;
     }
 
   }
 }
-.max-width-wrapper {
-  background-color: hsl(0, 0%, 100%);
-  max-width: 800px;
-  margin: 0 auto;
-  padding-left: 24px;
-  border-bottom: 8px solid hsl(0, 0%, 60%);
-}
+
